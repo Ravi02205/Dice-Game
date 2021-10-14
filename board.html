@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>DiceGame-Board</title>
+  </head>
+  <body>
+    <div class="board-wrapper wrapper">
+      <div class="board">
+        <div class="player-1 player">
+          <h1 class="player-1-heading heading">Player 1</h1>
+          <h2 class="score">0</h2>
+          <div class="img">
+            <img src="./images/dice1.png" />
+          </div>
+          <button class="roll-dice" onclick="rolldice(1)">Roll Dice</button>
+        </div>
+        <div class="player-2 player next-turn">
+          <h1 class="player-2-heading heading">Player 2</h1>
+          <h2 class="score">0</h2>
+          <div class="img">
+            <img src="./images/dice1.png" />
+          </div>
+          <button class="roll-dice" onclick="rolldice(2)" disabled>Roll Dice</button>
+        </div>
+        <div class="buttons">
+          <div class="restart-button">
+            <a href="./index.html"><i class="fa fa-refresh"></i></a>
+          </div>
+          <div class="replay-button">
+            <a href="./board.html"><i class="fas fa-redo"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container" onclick="handleClick()">
+        <div class="form-heading">
+          <h1>Dice Game</h1>
+          <form class="form" action="./board.html" method="get" onsubmit="onSubmitForm(event)">
+            <input type="text" id="player1-name" placeholder="Player 1" required />
+            <input type="text" id="player2-name" placeholder="Player 2" required />
+            <input
+              id="limit"
+              type="number"
+              placeholder="Limit"
+              min="10"
+              max="100"
+              required
+            />
+            <button type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>
